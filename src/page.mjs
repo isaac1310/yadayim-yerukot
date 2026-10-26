@@ -162,7 +162,6 @@ ${siteUrl ? `<meta property="og:url" content="${abs(self)}">\n` : ''}<meta name=
   <div class="hero-media">
     ${picture('apple-herzliya-atrium-wall', t.heroAlt, { sizes: '(min-width: 900px) 64vw, 100vw', eager: true })}
     <div class="hero-fade"></div>
-    <span class="hero-cap">${esc(t.heroCaption)}</span>
   </div>
   <div class="container hero-body">
     <div class="hero-text">

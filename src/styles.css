@@ -108,7 +108,6 @@ h2.on-dark { color: var(--cream); }
 .hero-media { position: relative; width: 100%; height: clamp(360px, 95vw, 520px); }
 .hero-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 8%; }
 .hero-fade { position: absolute; inset: 0 0 -2px 0; background: linear-gradient(to top, var(--cream) 0%, rgba(247, 244, 236, .6) 22%, rgba(247, 244, 236, 0) 50%); }
-.hero-cap { position: absolute; inset-inline-end: 20px; bottom: 120px; padding: 8px 14px; border-radius: 999px; background: rgba(247, 244, 236, .94); color: var(--forest); font-size: 14px; font-weight: 500; }
 .hero-body { position: relative; margin-top: -72px; padding-bottom: 56px; display: flex; align-items: center; }
 .hero-text { max-width: 560px; display: flex; flex-direction: column; align-items: flex-start; gap: 22px; }
 .eyebrow { display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 500; letter-spacing: .24em; text-transform: uppercase; color: var(--gold-text); }
@@ -123,7 +122,6 @@ h1 { font-weight: 800; font-size: clamp(40px, 5.6vw, 72px); line-height: 1.04; c
   .hero-media { position: absolute; top: 0; inset-inline-end: 0; width: 64%; height: 100%; }
   .hero-fade { background: linear-gradient(to left, var(--cream) 0%, rgba(247, 244, 236, .82) 16%, rgba(247, 244, 236, 0) 46%), linear-gradient(to top, var(--cream) 0%, rgba(247, 244, 236, 0) 16%); }
   [dir="ltr"] .hero-fade { background: linear-gradient(to right, var(--cream) 0%, rgba(247, 244, 236, .82) 16%, rgba(247, 244, 236, 0) 46%), linear-gradient(to top, var(--cream) 0%, rgba(247, 244, 236, 0) 16%); }
-  .hero-cap { bottom: 28px; }
   .hero-body { margin-top: 0; padding-block: clamp(64px, 10vh, 120px); min-height: clamp(620px, 86vh, 880px); }
 }
 
@@ -282,8 +280,11 @@ blockquote { max-width: 880px; font-weight: 700; font-size: clamp(30px, 4.4vw, 5
   .lead, .body-lg { font-size: 17px; }
   .eyebrow { letter-spacing: .14em; font-size: 12px; }
   .hero-body { padding-bottom: 40px; }
-  .clients-row { padding-block: 24px; gap: 10px 24px; }
-  .clients-names { gap: 8px 18px; }
+  /* Client names on one line, spread edge to edge */
+  .clients-row { padding-block: 24px; flex-direction: column; align-items: stretch; gap: 12px; }
+  .clients-names { flex-wrap: nowrap; justify-content: space-between; gap: 8px; white-space: nowrap; font-size: clamp(14px, 4.4vw, 19px); }
+  /* English names are too long for one line */
+  [lang="en"] .clients-names { flex-wrap: wrap; justify-content: flex-start; gap: 6px 14px; }
   .intro { gap: 36px; }
   .benefits { gap: 24px 20px; }
   .service { display: grid; grid-template-columns: auto 1fr; align-items: baseline; column-gap: 12px; row-gap: 6px; padding: 20px 20px 22px; }
