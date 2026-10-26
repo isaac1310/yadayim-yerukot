@@ -1,0 +1,13 @@
+{
+  "name": "green-hands-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "images": "node scripts/images.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  }
+}

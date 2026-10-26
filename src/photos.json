@@ -1,0 +1,127 @@
+{
+  "apple-haifa-lobby-wall": {
+    "width": 1289,
+    "height": 967,
+    "widths": [
+      480,
+      960,
+      1289
+    ]
+  },
+  "apple-herzliya-atrium-wall": {
+    "width": 725,
+    "height": 967,
+    "widths": [
+      480,
+      725
+    ]
+  },
+  "caesarea-outdoor-wall": {
+    "width": 1289,
+    "height": 967,
+    "widths": [
+      480,
+      960,
+      1289
+    ]
+  },
+  "checkpoint-entrance-wall": {
+    "width": 1289,
+    "height": 967,
+    "widths": [
+      480,
+      960,
+      1289
+    ]
+  },
+  "checkpoint-facade-closeup": {
+    "width": 725,
+    "height": 967,
+    "widths": [
+      480,
+      725
+    ]
+  },
+  "checkpoint-facade-full": {
+    "width": 725,
+    "height": 967,
+    "widths": [
+      480,
+      725
+    ]
+  },
+  "checkpoint-rooftop-wall": {
+    "width": 1289,
+    "height": 967,
+    "widths": [
+      480,
+      960,
+      1289
+    ]
+  },
+  "office-01": {
+    "width": 725,
+    "height": 967,
+    "widths": [
+      480,
+      725
+    ]
+  },
+  "office-02": {
+    "width": 728,
+    "height": 967,
+    "widths": [
+      480,
+      728
+    ]
+  },
+  "office-03": {
+    "width": 728,
+    "height": 967,
+    "widths": [
+      480,
+      728
+    ]
+  },
+  "office-04": {
+    "width": 1524,
+    "height": 857,
+    "widths": [
+      480,
+      960,
+      1524
+    ]
+  },
+  "office-05": {
+    "width": 543,
+    "height": 967,
+    "widths": [
+      480,
+      543
+    ]
+  },
+  "restaurant-01": {
+    "width": 725,
+    "height": 967,
+    "widths": [
+      480,
+      725
+    ]
+  },
+  "restaurant-02": {
+    "width": 725,
+    "height": 967,
+    "widths": [
+      480,
+      725
+    ]
+  },
+  "restaurant-03": {
+    "width": 725,
+    "height": 967,
+    "widths": [
+      480,
+      725
+    ]
+  }
+}

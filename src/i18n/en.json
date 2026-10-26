@@ -1,0 +1,157 @@
+{
+  "title": "Green Hands | Green walls & plant maintenance for businesses",
+  "logoAria": "Green Hands, back to top",
+  "navAria": "Main navigation",
+  "menuAria": "Menu",
+  "callAria": "Call 053-334-5032",
+  "langSwitch": "עב",
+  "langSwitchLang": "he",
+  "langAria": "מעבר לעברית",
+  "navServices": "Services",
+  "navProjects": "Projects",
+  "navProcess": "How it works",
+  "navFaq": "FAQ",
+  "navContact": "Contact",
+  "cta": "Get a quote",
+  "ctaShort": "Quote",
+  "heroAlt": "Tall living wall in an atrium, Apple Herzliya",
+  "heroTitle": "Green walls for successful businesses",
+  "heroSub": "Design | Installation | Ongoing maintenance of plants in offices and buildings",
+  "waBtn": "Message on WhatsApp",
+  "waLabel": "WhatsApp",
+  "waTip": "Chat with us on WhatsApp",
+  "waText": "Hi, I found you through the website and I'd like a quote",
+  "clientsTitle": "Among our clients",
+  "client1": "Apple",
+  "client2": "Check Point",
+  "client3": "Caesarea Development Corporation",
+  "introTitle": "Lasting green freshness in your office",
+  "introBody": "Green walls and plants make a stunning first impression, but only when they look their best. We specialize in professional, ongoing, all-round maintenance of plants and green walls in offices and business spaces. You enjoy the beauty and calm; we take care of everything else.",
+  "benefits": [
+    [
+      "Clean air",
+      "and a healthier space"
+    ],
+    [
+      "Premium look",
+      "that impresses"
+    ],
+    [
+      "Better productivity",
+      "and employee wellbeing"
+    ],
+    [
+      "Peace of mind",
+      "professional maintenance"
+    ]
+  ],
+  "servicesTitle": "What our service includes",
+  "servicesLead": "We design, install and maintain green walls indoors and on facades, plus pots and planters for offices and restaurants.",
+  "services": [
+    [
+      "Ongoing care & monitoring",
+      "Pruning, feeding, cleaning and shaping the plants"
+    ],
+    [
+      "System checks",
+      "Inspecting irrigation, drainage and dedicated grow lighting"
+    ],
+    [
+      "Prevention & restoration",
+      "Treating pests and disease, and replacing plants when needed"
+    ],
+    [
+      "Quiet service",
+      "Visits at convenient times that don’t disrupt the workday"
+    ]
+  ],
+  "projectsTitle": "Our projects",
+  "photos": "photos",
+  "showMore": "Show more projects",
+  "heroCaption": "Apple Herzliya",
+  "optional": "(optional)",
+  "nextStep": "After you send the form, we’ll call you to understand what you need and arrange the next step.",
+  "filterAria": "Filter projects",
+  "enlarge": "Enlarge image",
+  "tabs": {
+    "all": "All",
+    "walls": "Green walls",
+    "offices": "Offices",
+    "outdoor": "Restaurants & outdoor"
+  },
+  "caps": {
+    "checkpoint": "Green facade & walls, Check Point",
+    "herzliya": "Atrium green wall, Apple Herzliya",
+    "haifa": "Lobby green wall, Apple Haifa",
+    "cpFacade": "Green facade, Check Point",
+    "cpRoof": "Rooftop green wall, Check Point",
+    "cpEntrance": "Entrance green wall, Check Point",
+    "caesarea": "Outdoor green wall, Caesarea Development Corporation",
+    "office": "Office plants",
+    "restaurant": "Restaurant & outdoor plants"
+  },
+  "processTitle": "How it works",
+  "steps": [
+    [
+      "Consultation & design",
+      "We visit, get to know the space and tailor a solution to its light, budget and style"
+    ],
+    [
+      "Installation",
+      "Green wall, planters or pots, including irrigation and drainage"
+    ],
+    [
+      "Ongoing maintenance",
+      "Regular visits keep your plants at their best, for the long run"
+    ]
+  ],
+  "quote": "“A green business is a business that thinks about the future”",
+  "faqTitle": "FAQ",
+  "faqs": [
+    [
+      "Which areas do you cover?",
+      "[To fill: service area]"
+    ],
+    [
+      "How often do you come for maintenance?",
+      "It depends on the size and type of planting. Usually every two weeks to once a month."
+    ],
+    [
+      "Do you maintain green walls installed by another company?",
+      "Yes. We start with a diagnostic visit and a restoration plan if needed."
+    ],
+    [
+      "Do the plants need watering between visits?",
+      "No. We monitor the irrigation systems and take care of everything else."
+    ]
+  ],
+  "contactTitle": "Let’s grow this together",
+  "fName": "Full name",
+  "fCompany": "Company",
+  "fPhone": "Phone",
+  "fEmail": "Email",
+  "fService": "Service type",
+  "fMessage": "Message",
+  "fSubmit": "Request a quote",
+  "serviceOptions": [
+    "New green wall",
+    "Maintenance for an existing wall",
+    "Office plants",
+    "Other"
+  ],
+  "thanks": "Thank you",
+  "sentBody": "We’ve received your request and will get back to you shortly with a quote.",
+  "sentAgain": "Send another request",
+  "tagline": "More green for your business",
+  "footerLine": "People · Environment · Business · A greener future",
+  "copyright": "© Green Hands",
+  "prev": "Previous",
+  "next": "Next",
+  "close": "Close",
+  "description": "Green Hands: design, installation and ongoing maintenance of green walls and plants for offices, buildings, restaurants and public spaces.",
+  "ogDescription": "Design | Installation | Ongoing maintenance of plants in offices and buildings",
+  "sending": "Sending…",
+  "formError": "Something went wrong. Please try again, or contact us directly at 053-334-5032 or on WhatsApp.",
+  "phoneHint": "Israeli phone number, e.g. 050-1234567",
+  "skip": "Skip to content"
+}
