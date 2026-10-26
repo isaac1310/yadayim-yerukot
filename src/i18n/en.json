@@ -153,5 +153,7 @@
   "sending": "Sending…",
   "formError": "Something went wrong. Please try again, or contact us directly at 053-334-5032 or on WhatsApp.",
   "phoneHint": "Israeli phone number, e.g. 050-1234567",
-  "skip": "Skip to content"
+  "skip": "Skip to content",
+  "swipeHint": "swipe for more",
+  "projectsCount": "projects"
 }

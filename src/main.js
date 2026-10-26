@@ -16,16 +16,22 @@
   const tiles = $$('.tile');
   const filters = $$('.filter');
   const moreBtn = $('.show-more');
+  const masonry = $('.masonry');
+  const swipeCount = $('.swipe-count');
+  const phone = window.matchMedia('(max-width: 699px)'); // gallery is a swipe carousel here, so no paging
   let filter = 'all';
   let showAll = false;
   const matches = (cat) => filter === 'all' || cat === filter;
   function renderGallery() {
     const visible = tiles.filter((t) => matches(t.dataset.cat));
+    const all = showAll || phone.matches;
     tiles.forEach((t) => { t.hidden = true; });
-    visible.forEach((t, i) => { t.hidden = !showAll && i >= pageSize; });
+    visible.forEach((t, i) => { t.hidden = !all && i >= pageSize; });
     const extra = visible.length - pageSize;
-    moreBtn.parentElement.hidden = showAll || extra <= 0;
+    moreBtn.parentElement.hidden = all || extra <= 0;
     moreBtn.textContent = `${moreBtn.dataset.label} (${extra})`;
+    swipeCount.textContent = `${visible.length} ${swipeCount.dataset.label}`;
+    masonry.scrollLeft = 0;
   }
   filters.forEach((b) => b.addEventListener('click', () => {
     filter = b.dataset.filter;
@@ -34,6 +40,7 @@
     renderGallery();
   }));
   moreBtn.addEventListener('click', () => { showAll = true; renderGallery(); });
+  phone.addEventListener('change', renderGallery);
   renderGallery();
 
   // Lightbox: steps through every photo of the current filter
@@ -78,6 +85,16 @@
   $('.lb-prev', lb).addEventListener('click', () => step(-1));
   $('.lb-next', lb).addEventListener('click', () => step(1));
   lb.addEventListener('click', (e) => { if (e.target === lb) closeLb(); });
+  // Swipe between photos on touch screens
+  let touchX = null;
+  lb.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener('touchend', (e) => {
+    if (touchX === null) return;
+    const dx = e.changedTouches[0].clientX - touchX;
+    touchX = null;
+    if (Math.abs(dx) < 40) return;
+    step((dx < 0) !== rtl ? 1 : -1);
+  }, { passive: true });
   document.addEventListener('keydown', (e) => {
     if (lb.hidden) return;
     if (e.key === 'Escape') closeLb();
