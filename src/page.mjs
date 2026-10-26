@@ -140,9 +140,9 @@ ${siteUrl ? `<meta property="og:url" content="${abs(self)}">\n` : ''}<meta name=
       ${nav.map(([href, label]) => `<a href="${href}">${esc(label)}</a>`).join('\n      ')}
     </nav>
     <div class="header-actions">
-      <a class="pill-btn lang hide-xs" href="${other}" hreflang="${t.langSwitchLang}" lang="${t.langSwitchLang}" aria-label="${esc(t.langAria)}">${esc(t.langSwitch)}</a>
-      <a class="circle-btn hide-xs" href="tel:${PHONE_TEL}" aria-label="${esc(t.callAria)}">${ICON_PHONE}</a>
-      <a class="cta-sm" href="#contact"><span class="cta-long">${esc(t.cta)}</span><span class="cta-short">${esc(t.ctaShort)}</span></a>
+      <a class="pill-btn lang" href="${other}" hreflang="${t.langSwitchLang}" lang="${t.langSwitchLang}" aria-label="${esc(t.langAria)}">${esc(t.langSwitch)}</a>
+      <a class="circle-btn" href="tel:${PHONE_TEL}" aria-label="${esc(t.callAria)}">${ICON_PHONE}</a>
+      <a class="cta-sm hide-xs" href="#contact"><span class="cta-long">${esc(t.cta)}</span><span class="cta-short">${esc(t.ctaShort)}</span></a>
       <button type="button" class="circle-btn burger" aria-label="${esc(t.menuAria)}" aria-expanded="false" aria-controls="mobile-nav">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path class="burger-open" d="M4 7h16M4 12h16M4 17h16"/><path class="burger-close" d="M6 6l12 12M18 6L6 18"/></svg>
       </button>
@@ -150,10 +150,7 @@ ${siteUrl ? `<meta property="og:url" content="${abs(self)}">\n` : ''}<meta name=
   </div>
   <nav id="mobile-nav" class="nav-mobile" aria-label="${esc(t.navAria)}" hidden>
     ${nav.map(([href, label]) => `<a href="${href}">${esc(label)}</a>`).join('\n    ')}
-    <div class="nav-mobile-extra">
-      <a href="tel:${PHONE_TEL}">${ICON_PHONE}<span dir="ltr">${PHONE}</span></a>
-      <a href="${other}" hreflang="${t.langSwitchLang}" lang="${t.langSwitchLang}">${esc(t.langAria)}</a>
-    </div>
+    <a class="btn-primary nav-mobile-cta" href="#contact">${esc(t.cta)}</a>
   </nav>
 </header>
 
